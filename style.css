@@ -1,0 +1,204 @@
+body{
+    display: grid;
+    grid-template-rows: 60px auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+    margin: 0px;
+    background-color: lightblue;
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    background-image: url(imagens/headerpt1.png), url(imagens/headerpt2.png);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto 18%;
+    grid-template-areas: "logo bta btf btj btl btq .";
+    background-color: rgb(32, 32, 32);
+    border-bottom: 1px solid black;
+}
+
+.logoimg{
+    grid-area: logo;
+    margin-left: 20px;
+}
+
+.bta{grid-area: bta}
+.btf{grid-area: btf}
+.btj{grid-area: btj}
+.btl{grid-area: btl}
+.btq{grid-area: btq}
+
+.header button a{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Georgia;
+    color:whitesmoke;
+    padding: 18px;
+}
+
+.header button{
+    border: none;
+    background-color: transparent;
+    height: 60px;
+    display: flex;
+}
+
+.header button a:hover{
+    color: black;
+    background: gray;
+}
+
+.main{
+    grid-area: main;
+}
+
+.series{
+    font-size: 33px;
+    color:rgb(64, 64, 64);
+    font-family: Haettenschweiler;
+}
+
+.centro{
+    margin: 10px 80px;
+}
+
+.frame{
+    background-image: url(imagens/exploding_sapce.jpg);
+    background-size: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid red;
+    border-width: 4px;
+    border-top-left-radius: 85px;
+    border-top-right-radius: 85px;
+    height: 330px;
+    width: 180px;
+    margin: 40px;
+    display: inline-block;
+}
+
+.frame:hover{
+    animation: bordaframe 5s ease-in-out infinite;
+}
+
+.imglogo{
+    justify-content: center;
+    height: 75px;
+}
+
+.imgjanelas{
+    display: flex;
+}
+
+.imgjanelas:hover{
+    animation: imagens 2s ease-in-out infinite;
+}
+
+@keyframes bordaframe{
+    0%{border: solid red 4px;}
+    9%{border: solid orange 4px;}
+    17%{border: solid yellow 4px;}
+    25%{border: solid green 4px;}
+    33%{border: solid blue 4px;}
+    41%{border: solid indigo 4px;}
+    49%{border: solid violet 4px;}
+    57%{border: solid indigo 4px;}
+    65%{border: solid blue 4px;}
+    73%{border: solid green 4px;}
+    81%{border: solid yellow 4px;}
+    89%{border: solid orange 4px;}
+}
+
+@keyframes imagens{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+.digi{margin-left: -10px; margin-top: 10px;}
+.digilog{margin-left: 15px;}
+
+.dklog{margin-left: -30px; width: 250px;}
+.dk{margin-left: -30px;margin-top: 10px;}
+
+.ff{margin-left: -10px;}
+.fflog{margin-left: -15px; width: 220px;}
+
+.kh{margin-left: -12px; margin-top: 6px;}
+.khlog{margin-left: 28px;}
+
+.krb{margin-left: -10px; margin-top: 20px;}
+.krblog{margin-left: 5px;}
+
+.prsnlog{margin-left: -20px;}
+
+.poke{margin-top: 50px; margin-left: -5px;}
+.pokelog{margin-left: -15px;}
+
+.snclog{margin-left: -20px;}
+.snc{margin-top: 60px;margin-left: -8px;}
+
+.mr{margin-top: 10px; margin-left: 10px;}
+.mrlog{margin-left: -7px;}
+
+.zel{margin-top: 10px; margin-left: 5px;}
+
+.footer{
+    display: grid;
+    grid-area: footer;
+    background: linear-gradient(to right, white, grey, black, violet);
+    grid-template-rows: auto;
+    grid-template-columns: 15% auto 27%;
+    grid-template-areas: "copy formulario outros";
+    font-size: 18px;
+    border-top: 0.5px solid red;
+}
+
+.copyright{
+    grid-area: copy;
+    text-align: center;
+}
+
+.recomendacao{
+    width: 500px;
+    grid-area: formulario;
+    margin-left: 60px;
+    color: rgb(181, 197, 5);
+}
+
+.recomendacao fieldset{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: "side1 side2";
+    column-gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.recomendacao fieldset legend{
+    border: 1px solid black;
+}
+
+.recomendacao textarea{
+    resize: none;
+}
+
+.side1{grid-area: side1;}
+.side2{grid-area: side2;}
+
+.contato{
+    grid-area: outros;
+    color:  rgb(181, 197, 5);
+    text-align: center;
+    font-size: 25px;
+}
+
+.medias{
+    background-color: white;
+    border-radius: 10px;
+    margin: 1px 8px;
+}
