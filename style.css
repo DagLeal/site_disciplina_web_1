@@ -128,8 +128,14 @@ header button a:hover{
 .digi{margin-left: -10px; margin-top: 10px;}
 .digilog{margin-left: 15px;}
 
+.drkgntls{margin-left: -21px; margin-top: 25px;}
+.drkgntlslog{margin-left:08px;}
+
 .dklog{margin-left: -30px; width: 250px;}
 .dk{margin-left: -30px;margin-top: 10px;}
+
+.dw{margin-left: 17px; margin-top: 32px}
+.dwlog{margin-left: 53px;}
 
 .dbz{margin-left: 9px;}
 .dbzlog{margin-left: -25px;}
@@ -142,6 +148,9 @@ header button a:hover{
 
 .hp{margin-left: -19px; margin-top: -5px}
 .hplog{margin-left: -15px;}
+
+.hrtst{margin-left: -11px; margin-top: 14px}
+.hrtstlog{margin-left: -20px; margin-bottom: 10px;}
 
 .kh{margin-left: -12px; margin-top: 6px;}
 .khlog{margin-left: 28px;}
@@ -163,6 +172,9 @@ header button a:hover{
 .sndmn{margin-left: -10px; margin-top: 24px}
 .sndmnlog{margin-left: -40px; width: 250px;}
 
+.strngr{margin-top: 24px; margin-left: 4px;}
+.strngrlog{margin-left: 32px;}
+
 .snhr{margin-left: 30px;}
 .snhrlog{width: 250px; margin-left: -25px;}
 
@@ -177,6 +189,15 @@ header button a:hover{
 
 .bbth{margin-left: -30px; margin-top: 57px;}
 .bbthlog{margin-left: 60px;}
+
+.mbrll{margin-left:-20px; margin-top: 95px}
+.mbrlllog{margin-left: 52px;}
+
+.wndnh{margin-left: -15px; margin-top: 22px;}
+.wndnhlog{margin-left: -15px;}
+
+.wtchr{margin-left: 10px; margin-top: 23px;}
+.wtchrlog{width:250px; margin-left: -25px}
 
 .zel{margin-top: 10px; margin-left: 5px;}
 
@@ -237,7 +258,7 @@ footer{
     margin: 1px 8px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     .footer{
         display: block;
         grid-area: footer;
@@ -249,12 +270,13 @@ footer{
     .copyright{
         display:block;
         text-align: center;
+        font-size: 10px;
     }
     
     .recomendacao{
         display: block;
         width: 500px;
-        margin-left: 60px;
+        margin-left: 30px;
         color: rgb(181, 197, 5);
     }
     
