@@ -1,6 +1,9 @@
 body{
     margin: 0px;
     background-color: rgb(68, 157, 187);
+    background-image: url(imagens/outerspace-bkg.gif), url(imagens/outerspace-bkg2.gif);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 header{
@@ -10,8 +13,8 @@ header{
     background-position: left, right;
     background-repeat: no-repeat;
     grid-template-rows: auto;
-    grid-template-columns: auto auto auto auto auto auto auto 13%;
-    grid-template-areas: "logo bta btf btj btl btq bts .";
+    grid-template-columns: auto auto auto auto auto auto 20%;
+    grid-template-areas: "logo bta btf btj btl bts .";
     background-color: rgb(32, 32, 32);
     border-bottom: 1px solid black;
 }
@@ -25,7 +28,6 @@ header{
 .btf{grid-area: btf}
 .btj{grid-area: btj}
 .btl{grid-area: btl}
-.btq{grid-area: btq}
 .bts{grid-area: bts}
 
 header button a{
@@ -55,6 +57,22 @@ header button a:hover{
 
 .centro{
     margin: 10px 80px;
+}
+
+.indice{
+    margin: 10px 10px 10px 80px;
+    width: 60%;
+}
+
+aside{
+    width: 25%;
+    float: right;
+    margin-right: 20px;
+}
+
+aside ul{
+    list-style: none;
+    background-color: burlywood;
 }
 
 .frame{
@@ -111,16 +129,39 @@ header button a:hover{
     100%{transform: scale(1);}
 }
 
+.rsnlp{height: 230px; margin-left:11px; margin-top: 82px;}
+
+.tls{height: 230px; margin-left: 12px; margin-top: 82px;}
+
 .vtr{margin-left: -25px;margin-top: 30px;}
 .vtrlog{width:250px; margin-left: -18px;}
 
+.btlh{height: 230px; margin-left: 10px; margin-top: 82px;}
+
 .bf{margin-left: -45px; margin-top: 3px;}
+
+.bldm{margin-left: -25px; margin-top: 8px;}
+.bldmlog{margin-left: 25px;}
+
+.bblt{height: 230px; margin-left: 11px; margin-top: 82px;}
+
+.brms{height: 230px; margin-left: 11px; margin-top: 82px;}
 
 .crds{margin-left: -35px;}
 .crdslog{margin-left: -20px;}
 
 .cdz{margin-left: -3px;}
 .cdzlog{margin-left: 7px;}
+
+.chnts{margin-top: 53px; margin-left: 3px;}
+.chntslog{margin-left: 20px;}
+
+.crc{height: 230px; margin-left: 14.5px; margin-top: 82px;}
+
+.crnc{height: 230px; margin-left: 1px; margin-top: 82px;}
+
+.trnrdrg{margin-left: -23px;}
+.trnrdrglog{margin-left: 2px}
 
 .dmn{margin-left: -4px;}
 .dmnlog{margin-left: 22px;}
@@ -129,13 +170,18 @@ header button a:hover{
 .digilog{margin-left: 15px;}
 
 .drkgntls{margin-left: -21px; margin-top: 25px;}
-.drkgntlslog{margin-left:08px;}
+.drkgntlslog{margin-left: 8px;}
 
 .dklog{margin-left: -30px; width: 250px;}
 .dk{margin-left: -30px;margin-top: 10px;}
 
 .dw{margin-left: 17px; margin-top: 32px}
 .dwlog{margin-left: 53px;}
+
+.dwlvr{height: 230px; margin-left: 10px; margin-top: 82px;}
+
+.strnh{margin-left: 8px}
+.strnhlog{margin-left: 23px; margin-top: 5px}
 
 .dbz{margin-left: 9px;}
 .dbzlog{margin-left: -25px;}
@@ -149,10 +195,18 @@ header button a:hover{
 .hp{margin-left: -19px; margin-top: -5px}
 .hplog{margin-left: -15px;}
 
-.hrtst{margin-left: -11px; margin-top: 14px}
-.hrtstlog{margin-left: -20px; margin-bottom: 10px;}
+.hrtst{margin-left: -11px; margin-top: 24px}
+.hrtstlog{margin-left: -20px;}
 
-.kh{margin-left: -12px; margin-top: 6px;}
+.hll{margin-left: -6px; margin-top: 37px;}
+.hlllog{margin-left: -9px}
+
+.hs{margin-left:-3px; margin-top: 5px}
+.hslog{width:250px; margin-left: -35px}
+
+.nysh{margin-left: -3.5px;}
+
+.kh{margin-left: -12px; margin-top: 4px;}
 .khlog{margin-left: 28px;}
 
 .krb{margin-left: -10px; margin-top: 20px;}
@@ -164,6 +218,19 @@ header button a:hover{
 .jjts{margin-left: -4px;}
 .jjtslog{margin-left: -30px; width: 240px;}
 
+.mtmrfs{height: 230px; margin-left: 8px; margin-top: 82px;}
+
+.mmlv{margin-left: 7px;}
+.mmlvlog{margin-left: 55px;}
+
+.mnhm{margin-left: 3px; margin-top: 3px;}
+.mnhmlog{margin-left: 30px;}
+
+.mln{margin-left: 45px; margin-top: 12px;}
+.mlnlog{margin-left: 9px}
+
+.pqnlj{height: 230px; margin-left: 15px; margin-top: 82px;}
+
 .prsnlog{margin-left: -20px;}
 
 .poke{margin-top: 50px; margin-left: -5px;}
@@ -172,36 +239,56 @@ header button a:hover{
 .sndmn{margin-left: -10px; margin-top: 24px}
 .sndmnlog{margin-left: -40px; width: 250px;}
 
-.strngr{margin-top: 24px; margin-left: 4px;}
-.strngrlog{margin-left: 32px;}
-
 .snhr{margin-left: 30px;}
 .snhrlog{width: 250px; margin-left: -25px;}
+
+.snhrlvr{height: 230px; margin-left: 13.5px; margin-top: 82px;}
+
+.shmn{margin-left: 13px;}
+.shmnlog{margin-left: 33px;}
 
 .snclog{margin-left: -20px;}
 .snc{margin-top: 60px;margin-left: -8px;}
 
+.sncflm{margin-left: 35px; margin-top: 7px;}
+.sncflmlog{margin-left: 3px;}
+
 .stvn{margin-left: -12px; margin-top: 60px;}
 .stvnlog{margin-left: -8px;}
+
+.strngr{margin-top: 24px; margin-left: 4px;}
+.strngrlog{margin-left: 32px;}
 
 .mr{margin-top: 10px; margin-left: 10px;}
 .mrlog{margin-left: -7px;}
 
+.nnny{margin-left: -55px; margin-top: 65px;}
+.nnnylog{margin-left: 28px;}
+
+.ttnc{margin-left: -10px}
+.ttnclog{width: 250px; margin-left: -35px;}
+
 .bbth{margin-left: -30px; margin-top: 57px;}
 .bbthlog{margin-left: 60px;}
+
+.cntlh{height: 230px; margin-left: 14px; margin-top: 82px;}
 
 .mbrll{margin-left:-20px; margin-top: 95px}
 .mbrlllog{margin-left: 52px;}
 
 .wndnh{margin-left: -15px; margin-top: 22px;}
-.wndnhlog{margin-left: -15px;}
+.wndnhlog{margin-left: -35px;}
 
 .wtchr{margin-left: 10px; margin-top: 23px;}
-.wtchrlog{width:250px; margin-left: -25px}
+.wtchrlog{width:250px; margin-left: -33px}
+
+.yngsh{margin-left: 28px; margin-top: 5px;}
+.yngshlog{margin-left: -2px;}
 
 .zel{margin-top: 10px; margin-left: 5px;}
 
 footer{
+    width: 100%;
     display: grid;
     background: linear-gradient(to right, white, grey, black, violet);
     grid-template-rows: auto;
@@ -259,8 +346,7 @@ footer{
 }
 
 @media (max-width: 1366px) {
-    .footer{
-        display: block;
+    footer{
         grid-area: footer;
         background: linear-gradient(to right, white, grey, black, violet);
         font-size: 18px;

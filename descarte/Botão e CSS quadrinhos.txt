@@ -1,0 +1,6 @@
+Botão e CSS quadrinhos
+
+.btq{grid-area: btq}
+            <button class="btq"><a href="quadrinhos.html">Quadrinhos</a></button>
+
+                            <option>Quadrinho</option>
