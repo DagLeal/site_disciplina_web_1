@@ -49,10 +49,61 @@ header button a:hover{
     background: gray;
 }
 
+.sessao{
+    margin: none;
+    width: 100%;
+    background-color: rgb(34, 11, 56);
+    color: gold;
+    font-size: 36px;
+    border-radius: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
 .series{
     font-size: 33px;
-    color:rgb(64, 64, 64);
+    color:rgb(222, 207, 207);
     font-family: Haettenschweiler;
+}
+
+.retorno{
+    float: left;
+    margin: 30px 0px 50px 80px;
+}
+
+.retorno a{
+    color: gold;
+    font-size: 24px;
+    padding: 3px;
+    background-color: rgb(69,69,69);
+    text-decoration: none;
+    border: 4px solid red;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+}
+
+.retorno a:hover{
+    animation: bordaframe 5s ease-in-out infinite;
+}
+
+.topo{
+    float: right;
+    margin: 30px 80px 50px 0px;
+}
+
+.topo a{
+    color: gold;
+    font-size: 24px;
+    padding: 3px;
+    background-color: rgb(69,69,69);
+    text-decoration: none;
+    border: 4px solid red;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.topo a:hover{
+    animation: bordaframe 5s ease-in-out infinite;
 }
 
 .centro{
@@ -130,13 +181,16 @@ aside ul{
 }
 
 .rsnlp{height: 230px; margin-left:11px; margin-top: 82px;}
+.rsnlplog{height: 230px;}
 
 .tls{height: 230px; margin-left: 12px; margin-top: 82px;}
+.tlslog{height: 230px;}
 
 .vtr{margin-left: -25px;margin-top: 30px;}
 .vtrlog{width:250px; margin-left: -18px;}
 
 .btlh{height: 230px; margin-left: 10px; margin-top: 82px;}
+.btlhlog{height: 230px;}
 
 .bf{margin-left: -45px; margin-top: 3px;}
 
@@ -144,8 +198,10 @@ aside ul{
 .bldmlog{margin-left: 25px;}
 
 .bblt{height: 230px; margin-left: 11px; margin-top: 82px;}
+.bbltlog{height: 230px;}
 
 .brms{height: 230px; margin-left: 11px; margin-top: 82px;}
+.brmslog{height: 230px;}
 
 .crds{margin-left: -35px;}
 .crdslog{margin-left: -20px;}
@@ -157,8 +213,10 @@ aside ul{
 .chntslog{margin-left: 20px;}
 
 .crc{height: 230px; margin-left: 14.5px; margin-top: 82px;}
+.crclog{height: 230px;}
 
 .crnc{height: 230px; margin-left: 1px; margin-top: 82px;}
+.crnclog{height: 230px;}
 
 .trnrdrg{margin-left: -23px;}
 .trnrdrglog{margin-left: 2px}
@@ -179,6 +237,7 @@ aside ul{
 .dwlog{margin-left: 53px;}
 
 .dwlvr{height: 230px; margin-left: 10px; margin-top: 82px;}
+.dwlvrlog{height: 230px;}
 
 .strnh{margin-left: 8px}
 .strnhlog{margin-left: 23px; margin-top: 5px}
@@ -219,6 +278,7 @@ aside ul{
 .jjtslog{margin-left: -30px; width: 240px;}
 
 .mtmrfs{height: 230px; margin-left: 8px; margin-top: 82px;}
+.mtmrfslog{height: 230px;}
 
 .mmlv{margin-left: 7px;}
 .mmlvlog{margin-left: 55px;}
@@ -230,6 +290,7 @@ aside ul{
 .mlnlog{margin-left: 9px}
 
 .pqnlj{height: 230px; margin-left: 15px; margin-top: 82px;}
+.pqnljlog{height: 230px;}
 
 .prsnlog{margin-left: -20px;}
 
@@ -242,7 +303,8 @@ aside ul{
 .snhr{margin-left: 30px;}
 .snhrlog{width: 250px; margin-left: -25px;}
 
-.snhrlvr{height: 230px; margin-left: 13.5px; margin-top: 82px;}
+.snhrlvr{height: 230px; margin-left: 12.5px; margin-top: 82px;}
+.snhrlvrlog{height: 230px;}
 
 .shmn{margin-left: 13px;}
 .shmnlog{margin-left: 33px;}
@@ -272,6 +334,7 @@ aside ul{
 .bbthlog{margin-left: 60px;}
 
 .cntlh{height: 230px; margin-left: 14px; margin-top: 82px;}
+.cntlhlog{height: 230px;}
 
 .mbrll{margin-left:-20px; margin-top: 95px}
 .mbrlllog{margin-left: 52px;}
@@ -286,6 +349,41 @@ aside ul{
 .yngshlog{margin-left: -2px;}
 
 .zel{margin-top: 10px; margin-left: 5px;}
+
+object{
+    margin: 50px 0px 50px 0px;
+    border: 6px solid red;
+}
+
+.reviews{ 
+    width: 80%; 
+    margin: 25px 10% 35px 10%;
+}
+
+.reviews fieldset{
+    background-color: rgb(1, 220, 220);
+}
+
+.reviews fieldset legend{
+    border: 1px solid purple;
+}
+
+.reviews h1{
+    color: rgb(117, 0, 0);
+    font-size: 29px;
+    font-family: 'Trebuchet MS';
+    text-decoration: underline dotted;
+}
+
+.reviews h2{
+    font-size: 24px;
+    text-decoration: underline solid;
+}
+
+.reviews p{
+    font-size: 20px;
+    font-family: fantasy;
+}
 
 footer{
     width: 100%;
@@ -347,6 +445,7 @@ footer{
 
 @media (max-width: 1366px) {
     footer{
+        width: 100%;
         grid-area: footer;
         background: linear-gradient(to right, white, grey, black, violet);
         font-size: 18px;
