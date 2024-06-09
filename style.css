@@ -49,13 +49,15 @@ header button a:hover{
     background: gray;
 }
 
+.introducao{background: linear-gradient(0deg, salmon, #C71585, #FFD700, #E6E6FA, #4B0082, #3CB371);}
+
 .sessao{
     margin: none;
     width: 100%;
     background-color: rgb(34, 11, 56);
     color: gold;
     font-size: 36px;
-    border-radius: 150px;
+    border-radius: 20px;
     margin: 0px;
     padding: 0px;
 }
@@ -119,11 +121,29 @@ aside{
     width: 25%;
     float: right;
     margin-right: 20px;
+    margin-top: 10px;
+    border: 1px solid purple;
+    background: linear-gradient(to right, lightblue, rgb(186, 232, 247), lightblue, rgb(186, 232, 247), lightblue, rgb(186, 232, 247), lightblue, rgb(186, 232, 247));
+    border-radius: 3px;
+    font-family:'Lucida';
+    color:darkred;
 }
 
 aside ul{
     list-style: none;
-    background-color: burlywood;
+}
+
+#proximos{
+    font-size: 23px;
+    text-decoration: underline solid black;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.item{
+    font-size: 19px;
+    text-decoration: underline dotted black;
+    padding: 2px;
 }
 
 .frame{
@@ -350,6 +370,11 @@ aside ul{
 
 .zel{margin-top: 10px; margin-left: 5px;}
 
+.livros{
+    background-color: rgb(0, 148, 148);
+    border-radius: 5px;
+}
+
 object{
     margin: 50px 0px 50px 0px;
     border: 6px solid red;
@@ -361,7 +386,8 @@ object{
 }
 
 .reviews fieldset{
-    background-color: rgb(1, 220, 220);
+    background: linear-gradient(rgb(1, 158, 158), rgb(0, 180, 180), rgb(1, 220, 220) ,rgb(0, 255, 255));
+    border-radius: 15px;
 }
 
 .reviews fieldset legend{
@@ -406,7 +432,7 @@ footer{
     width: 500px;
     grid-area: formulario;
     margin-left: 60px;
-    color: rgb(75, 135, 19);
+    color: whitesmoke;
 }
 
 .recomendacao fieldset{
@@ -417,10 +443,11 @@ footer{
     column-gap: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
+    border-color: rgb(88, 95, 2);
 }
 
 .recomendacao fieldset legend{
-    border: 1px solid black;
+    border: 1px solid rgb(88, 95, 2);
 }
 
 .recomendacao textarea{
@@ -432,7 +459,7 @@ footer{
 
 .contato{
     grid-area: outros;
-    color:  rgb(181, 197, 5);
+    color:  white;
     text-align: center;
     font-size: 25px;
 }
@@ -441,6 +468,20 @@ footer{
     background-color: white;
     border-radius: 10px;
     margin: 1px 8px;
+}
+
+.obras{
+    height: 250px;
+    width: 200px;
+    animation: obra 5s ease infinite;
+}
+
+@keyframes obra{
+    0%{background-image: url(imagens/boneco-placa-obras12.png);}
+    25%{background-image: url(imagens/boneco-placa-obras22.png);}
+    50%{background-image: url(imagens/boneco-placa-obras32.png);}
+    75%{background-image: url(imagens/boneco-placa-obras42.png);}
+    100%{background-image: url(imagens/boneco-placa-obras12.png);}
 }
 
 @media (max-width: 1366px) {
@@ -492,4 +533,8 @@ footer{
         border-radius: 10px;
         margin: 1px 8px;
     }
+}
+
+@media (min-width:2000px){
+    body{background-size: 100% 100%;}
 }
