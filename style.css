@@ -113,7 +113,7 @@ header button a:hover{
 }
 
 .indice{
-    margin: 10px 10px 10px 80px;
+    margin: 40px 10px 10px 80px;
     width: 60%;
 }
 
@@ -121,7 +121,7 @@ aside{
     width: 25%;
     float: right;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 1px solid purple;
     background: linear-gradient(to right, lightblue, rgb(186, 232, 247), lightblue, rgb(186, 232, 247), lightblue, rgb(186, 232, 247), lightblue, rgb(186, 232, 247));
     border-radius: 3px;
